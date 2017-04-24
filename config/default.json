@@ -1,0 +1,8 @@
+{
+  "constructionProjectApp": {
+       "participantId" : "WebAppAdmin",
+       "participantPwd" :"DJY27pEnl16d",
+       "businessNetworkIdentifier" : "construction-network",
+       "connectionProfile" :"defaultProfile"
+    }
+}

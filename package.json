@@ -1,0 +1,33 @@
+{
+  "name": "construction-project-app",
+  "version": "0.0.1",
+  "description": "Construction Project Application",
+  "scripts": {
+    "start": "node app.js",
+    "preinstall": "composer --version || echo 'Please first run npm install -g composer-cli' ",
+    "deployNetwork": "composer archive create --sourceName construction-network --sourceType module --archiveFile constructionNetwork.bna && composer network deploy --archiveFile constructionNetwork.bna --enrollId WebAppAdmin --enrollSecret DJY27pEnl16d && composer network list -n construction-network --enrollId WebAppAdmin --enrollSecret DJY27pEnl16d",
+    "install": "scripts/download-hyperledger.sh && scripts/start-hyperledger.sh && npm run deployNetwork"
+  },
+  "author": "Alex Chien",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "composer-admin": "^0.5.0",
+    "composer-client": "^0.5.0",
+    "config": "^1.24.0",
+    "construction-network": "latest",
+    "jsonfile": "^2.4.0",
+    "lodash": "^4.17.4",
+    "sprintf-js": "^1.0.3",
+    "winston": "^2.3.1",
+    "yargs": "^6.5.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "chai-things": "^0.2.0",
+    "composer-connector-embedded": "^0.5.0",
+    "mocha": "^3.2.0",
+    "sinon": "^1.17.6",
+    "sinon-as-promised": "^4.0.2"
+  }
+}
