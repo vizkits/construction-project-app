@@ -10,6 +10,10 @@
   },
   "author": "Alex Chien",
   "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vizkits/construction-project-app.git"
+  },
   "dependencies": {
     "composer-admin": "^0.5.0",
     "composer-client": "^0.5.0",
